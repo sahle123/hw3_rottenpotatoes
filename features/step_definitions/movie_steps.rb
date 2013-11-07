@@ -45,7 +45,7 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
 end
 
 # Implementation for Then conjunction
-Then /I should ( not)? see the following: (.*)/ do |nary, movie_list|
+Then /I should( not)? see the following: (.*)/ do |nary, movie_list|
 
   movie_list.split(%r{.\s*}).each do |movies|
     if(nary)
