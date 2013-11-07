@@ -88,10 +88,12 @@ end
 
 When /^(?:|I )check "([^"]*)"$/ do |field|
   check(field)
+  #p "The check field is #{field}"
 end
 
 When /^(?:|I )uncheck "([^"]*)"$/ do |field|
   uncheck(field)
+  #p "The UNcheck field is #{field}"
 end
 
 When /^(?:|I )choose "([^"]*)"$/ do |field|
